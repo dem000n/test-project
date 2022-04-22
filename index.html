@@ -1,55 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Free Landing Page</title>
 </head>
 
 <body>
-    <div class="wrapper">
     <header class="header">
-        <div class="hi">
-            <div class="hi__body">
-                <div class="hi__title">Привет, друг!</div>
-                <ul class="hi__list">
-                    <li>У тебя все получится!</li>
-                    <li>Никогда не сдавайся!</li>
-                    <li>Сегодня ты уже знаешь больше чем вчера!</li>
-                    <li>Спасибо тебе за поддержку!</li>
+        <div class="container">
+            <nav class="header__menu">
+                <ul class="header__menu-links">
+                    <li><a class="header__menu-link" href="#">Home</a></li>
+                    <li><a class="header__menu-link" href="#">About me</a></li>
+                    <li><a class="header__menu-link" href="#">Skills</a></li>
+                    <li><a class="header__menu-link" href="#">Portfolio</a></li>
+                    <li><a class="header__menu-link" href="#">Contacts</a></li>
                 </ul>
+                <div class="header__menu-underline"></div>
+            </nav>
+            <div class="header__body">
+                <h1 class="header__title">Denis Novik</h1>
+                <p class="header__text">UX | UI designer
+                    24 years old, Minsk</p>
+                <div class="header__lang-switch">
+                    <p>RU | ENG</p>
+                </div>
             </div>
-            <div class="hi__image">
-                <img src="./image/header_img.png" height="250" width="500">
-            </div>
+            <div class="header__image"></div>
+
         </div>
     </header>
-    <main class="content">
-        <div class="what">
-            <div class="what__row">
-                <div class="what__image">
-                    <img src="./image/scheme.png" alt="схемка">
-                </div>
-                <div class="what__body">
-                    <div class="what__title">Что такое FlexBox?</div>
-                    <div class="what__text">
-                        <p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов flex-элементов. </p>
-                        <p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера.</p>
-                         </div>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">About me</h2>
+                <div class="about__text">
+                    <p class="about__paragraph">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
+                        everything connected with it.</p>
+                    <p class="about__paragraph">I'm studying at courses "Web and mobile design interfaces" in
+                        IT-Academy. </p>
+                    <p class="about__paragraph">Ready to implement excellent projects with wonderful people.</p>
                 </div>
             </div>
-        </div>
-        <p>asfsadfsdfsdfd</p>
-    </main>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="skills__body">
+                    <h1 class="skills__title">Skills</h1>
+                    <p class="skills__subtitle">I work in such programs as</p>
+                    <div class="skills__cards">
+                        <div class="skills__card">
+                            <div class="skills__card-icon skills__card-icon_icon_ps"></div>
+                            <h3 class="skills__card-title">Adobe Photoshop</h3>
+                            <div class="skills__card-stars">★★★★<span>★</span></div>
+                        </div>
+                        <div class="skills__card">
+                            <div class="skills__card-icon skills__card-icon_icon_ai"></div>
+                            <h3 class="skills__card-title">Adobe Illustrator</h3>
+                            <div class="skills__card-stars">★★★<span>★★</span></div>
+                        </div>
+                        <div class="skills__card">
+                            <div class="skills__card-icon skills__card-icon_icon_ae"></div>
+                            <h3 class="skills__card-title">Adobe After Effects</h3>
+                            <div class="skills__card-stars">★★★★<span>★</span></div>
+                        </div>
+                        <div class="skills__card">
+                            <div class="skills__card-icon skills__card-icon_icon_figma"></div>
+                            <h3 class="skills__card-title">Figma</h3>
+                            <div class="skills__card-stars">★★★★<span>★</span></div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <h1 class="portfolio__title">Portfolio</h1>
+                <div class="portfolio__body">
+                    <img class="portfolio__site-image" src="./image/fashion_store.png"
+                        alt="Скриншот сайта магазина Online fashion store"></img>
+                    <a class="portfolio__site-link" href="#">Online fashion store - Homepage</a>
+                </div>
+                <div class="portfolio__body">
+                    <img class="portfolio__site-image" src="./image/reebok_store.png"
+                        alt="Скриншот сайта магазина Reebok Store"></img>
+                    <a class="portfolio__site-link" href="#">Reebok Store - Concept</a>
+                </div>
+                <div class="portfolio__body">
+                    <img class="portfolio__site-image" src="./image/braun.png"
+                        alt="Скриншот сайта Braun Landing Page - Concept"></img>
+                    <a class="portfolio__site-link" href="#">Braun Landing Page - Concept</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
-        <div class="footer__row">
-            <div class="footer__text">Фрилансер по жизни 2022</div>
+        <div class="container">
+            <div class="footer__body">
+                <h1 class="footer__title">Contacts</h1>
+                <p class="footer__subtitle">Want to know more or just chat?</p>
+                    <p class="footer__subtitle">You are welcome!</p>
+                    <button class="footer__button">Send message</button>
+                    <div class="footer__social-links">
+                        <a href="" class="footer__social-link"><img src="./icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="" class="footer__social-link"><img src="./icons/instagram.png" alt="LinkedIn"></a>
+                        <a href="" class="footer__social-link"><img src="./icons/behance.png" alt="LinkedIn"></a>
+                        <a href="" class="footer__social-link"><img src="./icons/dribble.png" alt="LinkedIn"></a>
+                    </div>
+                    <p class="footer__links-subtitle">Like me on</p>
+                    <p class="footer__links-subtitle">LinkedIn, Instagram, Behance, Dribble</p>
+            </div>
         </div>
     </footer>
-
-    </div>
 </body>
 
 </html>
