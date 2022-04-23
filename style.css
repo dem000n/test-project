@@ -167,15 +167,15 @@
 }
 
 .skills__card-icon_icon_ps {
-    background: url(./icons/ps.png), url(./icons/bg.png);
+    background: url(./icons/ps1.png);
 }
 
 .skills__card-icon_icon_ai {
-    background: url(./icons/ai.png), url(./icons/bg.png);
+    background: url(./icons/ai1.png);
 }
 
 .skills__card-icon_icon_ae {
-    background: url(./icons/ae.png), url(./icons/bg.png);
+    background: url(./icons/ae1.png);
 }
 
 .skills__card-icon_icon_figma {
